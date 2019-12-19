@@ -1,0 +1,22 @@
+.top-menu {
+    background: red;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .home-logo {
+
+    }
+
+    .padding-space {
+        flex-grow: 1;
+    }
+
+    .menu-items {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+}

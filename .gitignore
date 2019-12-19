@@ -44,3 +44,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+bash.exe.stackdump
+sh.exe.stackdump
+package-lock.json
