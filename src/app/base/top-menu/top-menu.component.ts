@@ -6,13 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./top-menu.component.scss']
 })
 export class TopMenuComponent {
-  title = 'demo';
-
   constructor() {
-    console.log('test ne');
+    console.log('TopMenuComponent constructor');
   }
 
   onClick1() {
-    console.log('test ne 222');
+    console.log('onClick1 of TopMenuComponent');
   }
 }

@@ -6,13 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./right-side-bar.component.scss']
 })
 export class RightSideBarComponent {
-  title = 'demo';
-
   constructor() {
-    console.log('test ne');
+    console.log('RightSideBarComponent constructor');
   }
 
   onClick1() {
-    console.log('test ne 222');
+    console.log('onClick1 of RightSideBarComponent');
   }
 }
