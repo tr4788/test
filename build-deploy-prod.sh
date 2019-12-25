@@ -7,18 +7,18 @@ then
       exit 1
 else
       npm i
-      ng build --prod --outputPath=$DIST_PATH
-
-      echo $?
-
-      RESULT = $?
-      echo $RESULT
-
-      if [ "$RESULT" == 0 ]
+      if [ $? != 0 ]
       then
-            echo "== SUCCESS - all DONE =="
-      else
             echo '== ERROR - Stop all processes ==';
             exit 1
       fi
+
+      ng build --prod --outputPath=$DIST_PATH
+      if [ $? != 0 ]
+      then
+            echo '== ERROR - Stop all processes ==';
+            exit 1
+      fi
+      
+      echo "== SUCCESS - all DONE =="
 fi
