@@ -11,8 +11,8 @@ else
 
       echo $?
 
-      RESULT = $?;
-      echo $RESULT;
+      RESULT = $?
+      echo $RESULT
 
       if [ "$RESULT" == 0 ]
       then
