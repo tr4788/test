@@ -9,7 +9,13 @@ else
       npm i
       ng build --prod --outputPath=$DIST_PATH
       echo $DIST_PATH
-      set TEST = $;
-      echo TEST;
-      echo '== SUCCESS ==';
+      set RESULT = $;
+      echo $RESULT;
+      if [ "$RESULT" == 0 ]
+      then
+            echo "== SUCCESS - all DONE =="
+      else
+            echo '== ERROR - Stop all processes ==';
+            exit 1
+      fi
 fi
