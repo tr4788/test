@@ -8,9 +8,12 @@ then
 else
       npm i
       ng build --prod --outputPath=$DIST_PATH
-      echo $DIST_PATH
-      set RESULT = $;
+
+      echo $?
+
+      set RESULT = $?;
       echo $RESULT;
+
       if [ "$RESULT" == 0 ]
       then
             echo "== SUCCESS - all DONE =="
