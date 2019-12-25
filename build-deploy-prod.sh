@@ -9,5 +9,7 @@ else
       npm i
       ng build --prod --outputPath=$DIST_PATH
       echo $DIST_PATH
+      set TEST = $;
+      echo TEST;
       echo '== SUCCESS ==';
 fi
